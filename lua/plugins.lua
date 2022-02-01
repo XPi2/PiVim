@@ -5,11 +5,27 @@ return require('packer').startup(function()
   -- Tree Sitter
   use { 'nvim-treesitter/nvim-treesitter', opt = true }
 
-  -- LSP and completion
+  -- LSP
   use { 'neovim/nvim-lspconfig' }
-  use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'onsails/lspkind-nvim' }
+  use { 'RishabhRD/popfix' }
+  use { 'RishabhRD/nvim-lsputils' }
+
+  -- Autocomple
   use { 'hrsh7th/nvim-cmp' }
+  use { 'hrsh7th/cmp-buffer' }
+  use { 'hrsh7th/cmp-path' }
+  use { 'hrsh7th/cmp-nvim-lsp' }
   use { 'L3MON4D3/LuaSnip' }
+  use { 'hrsh7th/vim-vsnip' }
+
+  -- Comments
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
 
   -- Start screen
   use { 'mhinz/vim-startify' }
@@ -56,7 +72,7 @@ return require('packer').startup(function()
   -- Syntax
   use 'tomlion/vim-solidity'
 
-  -- Themes
+ -- Themes
   use 'EdenEast/nightfox.nvim'
 end)
 

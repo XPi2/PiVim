@@ -1,5 +1,9 @@
 local utils = require('utils')
 
+-- Map leader to space
+vim.g.mapleader = ' '
+
+-- Set default indent
 local indent = 4
 
 local fn = vim.fn
@@ -51,4 +55,4 @@ require('lualine').setup {
     theme = "nightfox"
   }
 }
-
+-- require('Comment').setup()
