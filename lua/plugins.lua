@@ -44,11 +44,12 @@ return require('packer').startup(function()
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'}
 
-  -- Fuzzy finder
+  -- Telescope
   use {
       'nvim-telescope/telescope.nvim',
       requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
   }
+  use { "nvim-telescope/telescope-file-browser.nvim" }
 
   -- Better Escape for no lag jk
   use {
