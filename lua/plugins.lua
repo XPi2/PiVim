@@ -51,6 +51,15 @@ return require('packer').startup(function()
   }
   use { "nvim-telescope/telescope-file-browser.nvim" }
 
+  -- Debug
+  use {
+      "folke/trouble.nvim",
+      requires = "kyazdani42/nvim-web-devicons",
+      config = function()
+          require("trouble").setup()
+      end,
+  }
+
   -- Better Escape for no lag jk
   use {
     "max397574/better-escape.nvim",
@@ -67,7 +76,7 @@ return require('packer').startup(function()
         -- ignore_lsp = {"rust-analyzer"},
         silent_chdir = false
     }
-    end
+    end,
   }
 
   -- Syntax

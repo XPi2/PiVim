@@ -20,6 +20,12 @@ api.nvim_set_keymap("n", "<leader>fb", "<cmd>Telescope file_browser<cr>", {norem
 api.nvim_set_keymap("n", "<leader>ft", "<cmd>Telescope help_tags<cr>", {noremap = true})
 api.nvim_set_keymap("n", "<leader>fp", "<cmd>lua require'telescope'.extensions.repo.list{}<cr>", {noremap = true})
 
+-- Trouble
+vim.api.nvim_set_keymap("n", "<leader>xx", "<cmd>Trouble<cr>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>xl", "<cmd>Trouble loclist<cr>", {silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", {silent = true, noremap = true})
+
 -- Git
 api.nvim_set_keymap("n", "<leader>gst", "<cmd>Telescope git_status<cr>", {noremap = true})
 api.nvim_set_keymap("n", "<leader>gc", "<cmd>Telescope git_commits<cr>", {noremap = true})
