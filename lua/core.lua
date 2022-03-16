@@ -19,7 +19,7 @@ vim.cmd [[packadd packer.nvim]]
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
 
 -- Enable theme, syntax & term colorscheme
-require('nightfox').load('nordfox')
+vim.cmd("colorscheme nordfox")
 vim.opt.termguicolors = true
 
 -- Fix indentation
