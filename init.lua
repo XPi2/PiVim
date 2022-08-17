@@ -1,6 +1,6 @@
 require('plugins')
+require('core')
 require('lsp')
 require('shortcuts')
 require('autocomplete')
 require('terminal')
-require('core')
