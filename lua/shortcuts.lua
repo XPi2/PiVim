@@ -10,7 +10,7 @@ api.nvim_set_keymap("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
 api.nvim_set_keymap("t", "jk", "<C-\\><C-n>", { noremap = true })
 
 -- Code manipulation
-api.nvim_set_keymap("n", "<leader>cf", "<cmd>lua vim.lsp.buf.formatting()<cr>", {noremap = true})
+api.nvim_set_keymap("n", "<leader>cf", "<cmd>lua vim.lsp.buf.format({async = true})<cr>", {noremap = true})
 
 -- Telescope
 --- Files
